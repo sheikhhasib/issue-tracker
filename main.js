@@ -66,10 +66,8 @@ const fetchIssues = () => {
                               <a href="#" onclick="deleteIssue(${id})" class="btn btn-danger">Delete</a>
                               </div>`;
     }
-    
-  }
-  if(count > 0){
     document.getElementById('totalIssue').innerText = issues.length +'  ';
-    document.getElementById('closedIssue').innerText = '  Closed Issues : '+ count +'  ';
+    document.getElementById('closedIssue').innerText = '  Closed Issues : '+ count +'  ';    
   }
+
 }
